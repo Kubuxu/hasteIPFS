@@ -2,7 +2,7 @@
 
 	<head>
 
-		<title>hastebin</title>
+		<title>hasteIPFS</title>
 
 		<link rel="stylesheet" type="text/css" href="solarized-dark.css"/>
 		<link rel="stylesheet" type="text/css" href="application.css"/>
@@ -12,7 +12,8 @@
 		<script type="text/javascript" src="application.js"></script>
 
 		<meta name="robots" content="noindex,nofollow"/>
-
+		<meta name="microtip" content="1FJ14QszCYeEJ1pehuq9e8ANZ9SK1826VW" data-currency="btc">
+		
 		<script type="text/javascript">
 			var app = null;
 			// Handle pops
@@ -31,7 +32,7 @@
 			}, 1000);
 			// Construct app and load initial path
 			$(function() {
-				app = new haste('hastebin', { twitter: true });
+				app = new haste('hasteIPFS', { twitter: true });
 				handlePop({ target: window });
 			});
 		</script>
@@ -44,7 +45,7 @@
 		<div id="key">
 		  <div id="pointer" style="display:none;"></div>
 			<div id="box1">
-				<a href="/about.md" class="logo"></a>
+				<a href="#" class="logo"></a>
 			</div>
 			<div id="box2">
 				<div class="save function"></div>
@@ -60,7 +61,7 @@
 		</div>
 
 		<div id="linenos"></div>
-		<pre id="box" style="display:none;" tabindex="0"><code></code></pre>
+		<pre id="box" style="display:none;" tabindex="0" class="hljs"><code></code></pre>
 		<textarea spellcheck="false" style="display:none;"></textarea>
 
 	</body>
