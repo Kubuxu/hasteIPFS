@@ -19,5 +19,4 @@ Road map:
  * [ ] Uploading files
  * [ ] Encryption of uploaded files
 
-  If you like what I am doing consider donating to: _1FJ14QszCYeEJ1pehuq9e8ANZ9SK1826VW_
   Jakub (Kubuxu) Sztandera

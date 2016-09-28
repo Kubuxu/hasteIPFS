@@ -388,7 +388,7 @@ haste.prototype.configureShortcuts = function() {
 };
 
 haste.prototype.loadAbout = function() {
-  this.loadDocument("QmfWH6hqbmHWGswDYqWYXDaCiLkgkKCyWbuUt1kQaK26yj.md")
+  this.loadDocument("QmbHiJDaj6v7xVv9VYf3KpgZZ7xQHejfziUV3Wm5ge2W5E.md")
 }
 
 ///// Tab behavior in the textarea - 2 spaces per tab
