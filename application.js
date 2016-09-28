@@ -17,7 +17,14 @@ haste_document.prototype.htmlEscape = function(s) {
 // Get this document from the server and lock it here
 
 haste_document.prototype.load = function(key, callback) {
-  var parts = key.split('.', 2);
+  var parts = [null, null]
+  var p = key.split('.')
+  parts[1] = p.pop()
+  parts[0] = p.join('.')
+  if (parts[0] === "") {
+    parts[0] = parts[1]
+    parts[1] = null
+  }
   var lang = haste.extensionMap[parts[1]] || parts[1];
   var _this = this;
   var running = [];
@@ -32,7 +39,7 @@ haste_document.prototype.load = function(key, callback) {
           }
         }
         _this.locked = true;
-        _this.key = key;
+        _this.key = location;
         _this.data = res;
         try {
           var high;
@@ -322,7 +329,7 @@ haste.prototype.configureButtons = function() {
       },
       shortcutDescription: 'control + shift + r',
       action: function() {
-        window.location.href = '/ipfs/' + _this.doc.key;
+        window.location.href = _this.doc.key;
       }
     },
     {
